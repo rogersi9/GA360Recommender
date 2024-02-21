@@ -1,4 +1,4 @@
-# GA360Recommender
+# GA360Recommender | TEAM 39
 Recommendation Engine based on Google Analytics 360 data from BigQuery.
 
 **Link to the data Schema**: https://support.google.com/analytics/answer/3437719?hl=en
