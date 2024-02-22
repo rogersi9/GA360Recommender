@@ -23,7 +23,7 @@ The project will focus on two primary research questions:
 1. How can the integration of collaborative filtering techniques be leveraged to enhance the personalization and relevance of item recommendations in an e-commerce setting?
 2. How do user-based and item-based collaborative filtering algorithms compare in terms of accurately predicting user preferences within an e-commerce context?
 
-## Model Design and Algorithms
+## Method Class
 
 The project will exclusively employ collaborative filtering approaches to predict user preferences and recommend items. By analyzing patterns of user interactions within the extensive Google Analytics Sample dataset, the system will identify and recommend items that users are likely to be interested in. The models will leverage user-item interaction data, such as product views, add-to-cart events, and purchases, to generate personalized recommendations.
 
