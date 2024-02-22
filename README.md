@@ -1,12 +1,35 @@
 # GA360Recommender | TEAM 39
-Recommendation Engine based on Google Analytics 360 data from BigQuery.
 
-**Link to the data Schema**: https://support.google.com/analytics/answer/3437719?hl=en
+# Project Abstract: Building an E-commerce Recommender System Using Google Analytics Data
 
-**Link to the data:** https://console.cloud.google.com/marketplace/details/obfuscated-ga360-data/obfuscated-ga360-data?filter=solution-type:dataset&project=realtime-gan
+This project aims to develop a recommender system for an e-commerce platform, predicting items users are likely to be interested in, based on item characteristics such as price, category, and other relevant features available in the [Google Analytics Sample](https://console.cloud.google.com/marketplace/product/obfuscated-ga360-data/obfuscated-ga360-data?project=realtime-gan) dataset hosted on BigQuery. The dataset provides 12 months (August 2016 to August 2017) of obfuscated Google Analytics 360 data from the [Google Merchandise Store](https://shop.merch.google/canada) a real ecommerce store that sells Google-branded merchandise, in BigQuery.
 
-The data includes The data is typical of what an ecommerce website would see and includes the following information:
+## Dataset Overview
 
-1. **Traffic source data**: information about where website visitors originate, including data about organic traffic, paid search traffic, and display traffic
-2. **Content data**: information about the behavior of users on the site, such as URLs of pages that visitors look at, how they interact with content, etc.
-3. **Transactional data**: information about the transactions on the Google Merchandise Store website.
+The Google Analytics Sample dataset encompasses a wide array of features, spanning user session data, e-commerce transactions, and item interactions. We have about 300,000 dataset and the key features relevant to this project include:
+
+- **Item Details**: Including price, category, and item ID.
+- **User Interactions**: Including product views, add-to-cart events, purchases, and session duration.
+- **User Details**: Including Unique ID, Continent, country, region and traffic source. 
+
+This dataset's complexity and comprehensiveness allow for a nuanced approach to understanding user preferences and behaviours in relation to item attributes. The full schema of the data is [available here](https://support.google.com/analytics/answer/3437719?hl=en)
+
+## Research Questions
+
+The project will focus on two primary research questions:
+
+1. How can the integration of collaborative filtering techniques be leveraged to enhance the personalization and relevance of item recommendations in an e-commerce setting?
+2. How do user-based and item-based collaborative filtering algorithms compare in terms of accurately predicting user preferences within an e-commerce context?
+
+## Model Design and Algorithms
+
+The project will exclusively employ collaborative filtering approaches to predict user preferences and recommend items. By analyzing patterns of user interactions within the extensive Google Analytics Sample dataset, the system will identify and recommend items that users are likely to be interested in. The models will leverage user-item interaction data, such as product views, add-to-cart events, and purchases, to generate personalized recommendations.
+
+### Algorithms for Comparison:
+
+We plan to implement two collaborative filtering algorithms and conduct a comparative analysis of their outcomes. The algorithms under comparison will be the User-Based (user-user) and Item-Based (item-item) collaborative filtering approaches:
+
+1. **User-Based Collaborative Filtering**: This algorithm will recommend items by identifying similarities between users based on their interaction histories. By finding users with similar preferences and behaviors, the system can recommend items liked by these similar users to the target user. The similarity between users will be calculated using metrics such as Pearson correlation or cosine similarity, based on their interactions with various items.
+
+2. **Item-Based Collaborative Filtering**: This approach focuses on the similarity between items rather than users. The system will recommend items that are similar to those a user has previously interacted with or shown interest in. Similarity between items will be determined based on the pattern of user interactions, meaning items frequently interacted with by the same set of users are considered similar.
+
