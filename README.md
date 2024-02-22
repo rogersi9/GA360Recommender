@@ -12,7 +12,9 @@ The Google Analytics Sample dataset encompasses a wide array of features, spanni
 - **User Interactions**: Including product views, add-to-cart events, purchases, and session duration.
 - **User Details**: Including Unique ID, Continent, country, region and traffic source. 
 
-This dataset's complexity and comprehensiveness allow for a nuanced approach to understanding user preferences and behaviours in relation to item attributes. The full schema of the data is [available here](https://support.google.com/analytics/answer/3437719?hl=en)
+A success of prediciting the right item will be considered when a recommended item is purchased. 
+
+The full schema of the data is [available here](https://support.google.com/analytics/answer/3437719?hl=en)
 
 ## Research Questions
 
