@@ -1,20 +1,14 @@
-import os
-import sys
 from pyspark.rdd import RDD
-from pyspark.sql import Row
 from pyspark.sql import DataFrame
 from pyspark.sql import SparkSession
-import pyspark.sql.functions as F
 from pyspark.sql.window import Window
-
 from pyspark.sql.functions import concat
 from pyspark.sql.functions import lit
 from pyspark.sql.functions import col
 from pyspark.sql.functions import lead
 from pyspark.sql.functions import when
 from pyspark.sql.functions import sum
-from pyspark.ml.evaluation import RegressionEvaluator
-from pyspark.ml.recommendation import ALS
+
 
 
 '''
