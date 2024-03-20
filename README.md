@@ -35,3 +35,5 @@ We plan to implement two collaborative filtering algorithms and conduct a compar
 
 2. **Item-Based Collaborative Filtering**: This approach focuses on the similarity between items rather than users. The system will recommend items that are similar to those a user has previously interacted with or shown interest in. Similarity between items will be determined based on the pattern of user interactions, meaning items frequently interacted with by the same set of users are considered similar.
 
+3. **ALS-Based Collaborative Filtering**: This method employs matrix factorization to predict a user's item preferences. It decomposes the original utility matrix into user and item matrices to capture latent factors associated with users and items. Recommendations are made by reconstructing the utility matrix from these latent factors, enabling the system to infer user preferences for items they haven't interacted with. ALS optimizes these matrices to minimize the difference between observed and predicted ratings, providing a scalable approach to collaborative filtering.
+
