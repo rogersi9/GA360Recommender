@@ -29,7 +29,7 @@ The project will exclusively employ collaborative filtering approaches to predic
 
 ### Algorithms for Comparison:
 
-We plan to implement two collaborative filtering algorithms and conduct a comparative analysis of their outcomes. The algorithms under comparison will be the User-Based (user-user) and Item-Based (item-item) collaborative filtering approaches:
+We plan to implement two collaborative filtering algorithms and conduct a comparative analysis of their outcomes. The algorithms under comparison will be the Latent Factor, User-Based (user-user) and Item-Based (item-item) collaborative filtering approaches:
 
 1. **User-Based Collaborative Filtering**: This algorithm will recommend items by identifying similarities between users based on their interaction histories. By finding users with similar preferences and behaviors, the system can recommend items liked by these similar users to the target user. The similarity between users will be calculated using metrics such as Pearson correlation or cosine similarity, based on their interactions with various items.
 
