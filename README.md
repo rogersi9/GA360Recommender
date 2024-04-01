@@ -20,7 +20,7 @@ The full schema of the data is [available here](https://support.google.com/analy
 
 The project will focus on two primary research questions:
 
-1. How can the integration of collaborative filtering techniques be leveraged to enhance the personalization and relevance of item recommendations in an e-commerce setting?
+1. How can the integration of collaborative filtering and latent factor techniques be leveraged to enhance the personalization and relevance of item recommendations in an e-commerce setting?
 2. How do user-based and item-based collaborative filtering algorithms compare in terms of accurately predicting user preferences within an e-commerce context?
 
 ## Method Class
